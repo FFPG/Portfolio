@@ -1,0 +1,104 @@
+/* Visitenkarte styles */
+/* variablen */
+
+$backgroundcard: linear-gradient(to bottom right ,rgb(63, 171, 179), rgb(48, 204, 53));
+$backgroundcardback: rgb(88, 152, 158);
+$p-text-color:rgb(244,244,244);
+$visitencard-back-text-margin: 5px;
+$visitencard-back-text-padding: 1px;
+$visitencard-back-text-font-size: 11pt;
+$visitencard-back-text-bx-background: rgba(223, 219, 219, 0.12);
+
+/* body */
+$visitencaard-face-height: 345px; 
+
+.visitencard{
+    height: calc($visitencaard-face-height * 2);
+    position: relative;
+    &-btn{
+        position: absolute;
+        bottom: 20px;
+        right: 5px;
+        transform: translateZ(5px);
+    }
+    &-content{
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 3s;
+        transform-origin: center;
+        width: 504px;
+    }
+    &-faces{
+        width: 500px;
+        height: $visitencaard-face-height;
+        position: absolute;
+        transform-style: preserve-3d;
+        padding: 5px;
+    }
+    &_front{
+        transform: translateZ(5px);
+        background: $backgroundcard;
+        transform-style: preserve-3d;
+    }
+    &-bild{
+        width: 25%;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: rgba(223, 219, 219, 0.4);
+        transform: translateZ(6px);
+        filter: drop-shadow(0 0 1rem rgba(114, 114, 114, 0.4));
+        box-shadow: 0px 0px 7px rgba(201, 201, 201, 0.2);
+    }
+
+    &_back{
+        transform: translateZ(1px) rotateY(180deg) ;
+        background: $backgroundcardback;
+        &-open{
+            transform: translateZ(3px);
+            background: $backgroundcardback;
+            transition: transform 4s;
+        }
+    }
+    &_back > &-title{
+        position: absolute;
+        top: 18px;
+        left: 12px;
+    }
+    &-back{
+        &-txt-bx{
+            position: absolute;
+            width: 100%;
+            height: fit-content;
+            top: 45px;
+        }
+        &-content-p{
+            margin-left: $visitencard-back-text-margin;
+            margin-right: $visitencard-back-text-margin;
+            padding: $visitencard-back-text-padding;
+        }
+        &-open-txt-bx{
+            position: absolute;
+            width: 100%;
+            height: fit-content;
+            top: 5px;
+        }
+    }
+    &_back-open-content{
+        transform: rotateY(180deg);
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+}
+
+/* turning card classes */
+.turnback{
+    transform: rotate3d(0,19,1,180deg);
+}
+.openbackbox{        
+    transform: translate3d(0px,$visitencaard-face-height,0px) ;
+    border-top: 1px solid rgba(108, 136, 135, 0.5);
+    box-shadow: 0px -3px 5px rgba(81, 102, 102, 0.576);
+}
