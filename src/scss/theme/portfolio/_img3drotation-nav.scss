@@ -1,0 +1,10 @@
+.#{$prefix}-img3drotation-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
