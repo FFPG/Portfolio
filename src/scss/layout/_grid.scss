@@ -1,0 +1,8 @@
+
+/* grid */
+.#{$prefix}-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-block: $ffpg-font-size-base / 2; 
+}

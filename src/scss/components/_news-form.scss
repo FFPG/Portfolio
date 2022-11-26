@@ -1,0 +1,97 @@
+$ffpg-form-email-background-color: $ffpg-color-primary-light !default; 
+$ffpg-form-focus-visible-border-color: $ffpg-color-primary !default; 
+$ffpg-form-email-width: 33.3333% !default; 
+$ffpg-form-email-border-radius: 2px !default; 
+$ffpg-form-email-submit-padding-inline: 2.2rem !default; 
+$ffpg-form-email-submit-padding-block: 1.2rem !default; 
+$ffpg-form-email-submit-color: $ffpg-color-white !default; 
+$ffpg-form-email-submit-content: '\2192' !default; 
+$ffpg-form-email-input-color: $ffpg-color-primary-dark !default; 
+$ffpg-form-email-input-caret-color: $ffpg-color-primary !default; 
+
+.#{$prefix}-news-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $ffpg-form-email-background-color;
+    padding-block: 5px;
+    padding-left: 7px;
+    padding-right: 5px;
+    width: $ffpg-form-email-width;
+    gap: 2rem;
+    //height: 62px;
+    width: fit-content;
+    z-index: 2;
+    position: relative;
+    
+    @media(max-width:576px ){
+        position: relative;
+        width: 100%;
+        height: 144px; 
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    &__input{
+        @extend %typo-body;
+        //width: 66.6666%;
+        caret-color: $ffpg-form-email-input-caret-color; 
+        background-color: $ffpg-form-email-background-color;
+        padding-inline: $ffpg-form-email-submit-padding-inline;
+        padding-block: calc($ffpg-form-email-submit-padding-block - 2px);
+        border: 2px solid transparent;
+        color: $ffpg-form-email-input-color;
+        z-index: 2;
+        
+        line-height: 1;
+        &:active{
+            background-color: $ffpg-form-email-background-color;
+            border-radius: $ffpg-form-email-border-radius;
+            border: 2px solid transparent;
+            outline: none;
+            text-align: left;
+        }
+        &:focus-visible, 
+        &:focus, 
+        &:hover{
+            border: 2px solid $ffpg-form-focus-visible-border-color;
+            border-radius: $ffpg-form-email-border-radius;
+            outline: none;
+            text-align: left;
+        }
+        @media(max-width:576px ){
+            width: 100%;
+            height: 45%;
+        }
+    }
+    &__submit{
+        @extend %typo-body;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: $ffpg-form-email-submit-padding-inline;
+        padding-block: $ffpg-form-email-submit-padding-block;
+        min-width: 197px;
+        z-index: 1;
+        border: 1px solid transparent;
+        position: relative;
+        &::after{
+            content: $ffpg-form-email-submit-content; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            width: 46px;
+            height: 98%;
+            color: $ffpg-form-email-submit-color;
+            background-color: transparent;
+            border-radius: $ffpg-form-email-border-radius;
+            margin-right: 1px;
+            position: absolute;
+            right: 5px;
+        }
+        
+    }
+}

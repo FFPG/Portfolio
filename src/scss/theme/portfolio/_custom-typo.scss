@@ -1,0 +1,105 @@
+//  html{
+//      font-size: ;                                                                    //base value: $ffpg-font-size-root;
+//  }
+
+//  %typo-body{
+//      font-family: ;                                                                  //base value: $ffpg-font-family-base;
+//      font-size: ;                                                                    //base value: $ffpg-body-font-size;
+//      font-weight: ;                                                                  //base value: $ffpg-font-weight-normal;
+//  }
+
+//  body{
+//      @extend %typo-body;
+//      color: ;                                                                        //base value: $ffpg-body-color;
+//      line-height: ;                                                                  //base value: $ffpg-body-line-height;
+//  }
+
+//  %headline{
+//      font-family: ;                                                                  //base value: $ffpg-font-family-base;
+//      font-weight: ;                                                                  //base value: $ffpg-font-weight-bold;
+//      letter-spacing: ;                                                               //base value: normal; 
+//      margin-bottom: ;                                                                //base value: .7rem;
+//  }
+
+//  h1,
+//  .#{$prefix}-h1{
+//      @extend %headline;
+//      font-size: ;                                                                    //base value: $ffpg-h1-font-size;
+//      line-height: ;                                                                  //base value: $ffpg-h1-line-height;
+//      color: ;                                                                        //base value: $ffpg-h1-color;
+//  }
+
+//  h2,
+//  .#{$prefix}-h2{
+//      @extend %headline;
+//      font-size: ;                                                                    //base value: $ffpg-h2-font-size;
+//      line-height: ;                                                                  //base value: $ffpg-h2-line-height;
+//      color: ;                                                                        //base value: $ffpg-h2-color;
+//  }
+
+//  h3,
+//  .#{$prefix}-h3{
+//      @extend %headline;
+//      font-size: ;                                                                    //base value: $ffpg-h3-font-size;
+//      line-height: ;                                                                  //base value: $ffpg-h3-line-height;
+//      color: ;                                                                        //base value: $ffpg-h3-color;
+//  }
+
+//  h4,
+//  .#{$prefix}-h4{
+//      @extend %headline;
+//      font-size: ;                                                                    //base value: $ffpg-h4-font-size;
+//      line-height: ;                                                                  //base value: $ffpg-h4-line-height;
+//      color: ;                                                                        //base value: $ffpg-h4-color;
+//  }
+
+//  h5,
+//  .#{$prefix}-h5{
+//      @extend %headline;
+//      font-size: ;                                                                    //base value: $ffpg-h5-font-size;
+//      line-height: ;                                                                  //base value: $ffpg-h5-line-height;
+//      color: ;                                                                        //base value: $ffpg-h5-color;
+//  }
+
+//  h6,
+//  .#{$prefix}-h6{
+//      @extend %headline;
+//      font-size: ;                                                                    //base value: $ffpg-h6-font-size;
+//      line-height: ;                                                                  //base value: $ffpg-h6-line-height;
+//      color: ;                                                                        //base value: $ffpg-h6-color;
+//  }
+
+//  code{
+//      @extend %typo-body;
+//      font-family: ;                                                                  //base value: $ffpg-font-family-code; 
+//  }
+
+//  a{
+//      @extend %typo-body;
+//  }
+
+//  b,
+//  strong{
+//      font-weight: ;                                                                  //base value: $ffpg-font-weight-bold;
+//  }
+
+//  thead, th, td, tr{
+//      text-align: ;                                                                   //base value: left;
+//  }
+
+//  thead, th{
+//      font-weight: ;                                                                  //base value: normal;
+//  }
+
+//  small{
+//      font-size: ;                                                                    //base value: $ffpg-font-size-small;
+//  }   
+
+//  ::selection{
+//      background-color: ;                                                             //base value: $ffpg-selection-background-color;
+//      color: ;                                                                        //base value: $ffpg-selection-color;
+//  }
+
+
+
+

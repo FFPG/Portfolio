@@ -1,0 +1,123 @@
+$ffpg-status-button-darken: 15% !default;
+//buttons
+//primary
+$ffpg-button-primary-background-color: $ffpg-color-primary !default; 
+$ffpg-button-primary-color: $ffpg-color-white !default;
+$ffpg-button-primary-border-color: transparent !default;
+//hover
+$ffpg-button-primary-hover-background-color: lighten( $ffpg-color-primary, 10%) !default; 
+$ffpg-button-primary-hover-color: $ffpg-color-white !default;
+$ffpg-button-primary-hover-border-color: transparent !default;
+
+//secondary
+$ffpg-button-secondary-background-color: transparent !default; 
+$ffpg-button-secondary-color: $ffpg-color-primary !default;
+$ffpg-button-secondary-border-color: $ffpg-color-primary !default;
+//hover
+$ffpg-button-secondary-hover-background-color: $ffpg-color-primary !default; 
+$ffpg-button-secondary-hover-color: $ffpg-color-white !default;
+$ffpg-button-secondary-hover-border-color: transparent !default;
+
+//disabled
+$ffpg-button-disabled-background-color: $ffpg-color-grey !default; 
+$ffpg-button-disabled-color: $ffpg-color-black !default;
+$ffpg-button-disabled-border-color: transparent !default;
+
+//padding
+$ffpg-button-padding-inline: 2.2rem !default; 
+$ffpg-button-padding-block: 1.2rem !default; 
+
+.#{$prefix}-button{
+    @extend %typo-body;
+    display: inline-block;
+    padding-inline: $ffpg-button-padding-inline;
+    padding-block: $ffpg-button-padding-block;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+    transition: $ffpg-transition-short;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    &--primary{
+        color: $ffpg-button-primary-color;
+        background-color: $ffpg-button-primary-background-color;
+        border-color: $ffpg-button-primary-border-color;
+        &:hover,
+        &:active,
+        &:focus{
+            color: $ffpg-button-primary-hover-color;
+            background-color: $ffpg-button-primary-hover-background-color;
+            border-color: $ffpg-button-primary-hover-border-color;
+        }
+    }
+    &--secondary{
+        color: $ffpg-button-secondary-color;
+        background-color: $ffpg-button-secondary-background-color;
+        border-color: $ffpg-button-secondary-border-color;
+        &:hover,
+        &:active,
+        &:focus{
+            color: $ffpg-button-secondary-hover-color;
+            background-color: $ffpg-button-secondary-hover-background-color;
+            border-color: $ffpg-button-secondary-hover-border-color;
+        }
+    }
+    &--disabled{
+        color: $ffpg-button-disabled-color;
+        background-color: $ffpg-button-disabled-background-color;
+        border-color: $ffpg-button-disabled-border-color;
+        cursor:not-allowed;
+        &:hover,
+        &:active,
+        &:focus{
+            color: $ffpg-button-disabled-color;
+            background-color: $ffpg-button-disabled-background-color;
+            border-color: $ffpg-button-disabled-border-color;
+        }
+    }
+    &--succses{
+        color: $ffpg-color-white;
+        background-color: $ffpg-color-succses;
+        border-color: $ffpg-color-succses;
+        &:hover,
+        &:active,
+        &:focus{
+            background-color: darken($ffpg-color-succses, $ffpg-status-button-darken);
+            border-color: darken($ffpg-color-succses, $ffpg-status-button-darken);
+        }
+    }
+    &--info{
+        color: $ffpg-color-white;
+        background-color: $ffpg-color-info;
+        border-color: $ffpg-color-info;
+        &:hover,
+        &:active,
+        &:focus{
+            background-color: darken($ffpg-color-info, $ffpg-status-button-darken);
+            border-color: darken($ffpg-color-info, $ffpg-status-button-darken);
+        }
+    }
+    &--warning{
+        color: $ffpg-color-white;
+        background-color: $ffpg-color-warning;
+        border-color: $ffpg-color-warning;
+        &:hover,
+        &:active,
+        &:focus{
+            background-color: darken($ffpg-color-warning, $ffpg-status-button-darken);
+            border-color: darken($ffpg-color-warning, $ffpg-status-button-darken);
+        }
+    }
+    &--danger{
+        color: $ffpg-color-white;
+        background-color: $ffpg-color-danger;
+        border-color: $ffpg-color-danger;
+        &:hover,
+        &:active,
+        &:focus{
+            background-color: darken($ffpg-color-danger, $ffpg-status-button-darken);
+            border-color: darken($ffpg-color-danger, $ffpg-status-button-darken);
+        }
+    }
+}

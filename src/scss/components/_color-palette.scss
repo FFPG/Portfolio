@@ -1,0 +1,25 @@
+
+.#{$prefix}-color-palette{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1rem;
+    &__item{
+        border: 2px dotted black;
+        padding-inline: 1rem;
+        padding-block: 0.5rem;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__color{
+        width: 100px;
+        height: 100px;
+        &::after{
+            content:''; 
+            width: 5rem;
+        }
+    }
+}

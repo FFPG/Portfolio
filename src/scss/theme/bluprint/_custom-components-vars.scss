@@ -1,0 +1,72 @@
+// customize the vars from Components of the framework
+
+//----------------------------------------------------> Button <----------------------------------------------------//
+//$ffpg-status-button-darken: ;                                                    //base value: 15% ;
+//primary
+//$ffpg-button-primary-background-color: ;                                         //base value: $ffpg-color-primary; 
+//$ffpg-button-primary-color: ;                                                    //base value: $ffpg-color-white;
+//$ffpg-button-primary-border-color: ;                                             //base value: transparent;
+//hover
+//$ffpg-button-primary-hover-background-color: ;                                   //base value: lighten( $ffpg-color-primary, 10%); 
+//$ffpg-button-primary-hover-color: ;                                              //base value: $ffpg-color-white;
+//$ffpg-button-primary-hover-border-color: ;                                       //base value: transparent;
+
+//secondary
+//$ffpg-button-secondary-background-color: ;                                       //base value: transparent; 
+//$ffpg-button-secondary-color: ;                                                  //base value: $ffpg-color-primary;
+//$ffpg-button-secondary-border-color: ;                                           //base value: $ffpg-color-primary;
+//hover
+//$ffpg-button-secondary-hover-background-color: ;                                 //base value: $ffpg-color-primary; 
+//$ffpg-button-secondary-hover-color: ;                                            //base value: $ffpg-color-white;
+//$ffpg-button-secondary-hover-border-color: ;                                     //base value: transparent;
+
+//disabled
+//$ffpg-button-disabled-background-color: ;                                        //base value: $ffpg-color-grey; 
+//$ffpg-button-disabled-color: ;                                                   //base value: $ffpg-color-black;
+//$ffpg-button-disabled-border-color: ;                                            //base value: transparent;
+
+//padding
+//$ffpg-button-padding-inline: ;                                                   //base value: 2.2rem !default; 
+//$ffpg-button-padding-block: ;                                                    //base value: 1rem !default;  
+
+//----------------------------------------------------> Cards <----------------------------------------------------//
+//$ffpg-card-padding-inline: ;                                                     //base value: $ffpg-font-size-base * 2; 
+//$ffpg-card-padding-block: ;                                                      //base value: calc($ffpg-font-size-base / 2);
+//$ffpg-card-padding-bottom: ;                                                     //base value: calc($ffpg-font-size-base / 2);
+//$ffpg-card-padding-top: ;                                                        //base value: $ffpg-font-size-base * 2;
+//$ffpg-card-boder-color: ;                                                        //base value: $ffpg-color-white; 
+//$ffpg-card-background-color: ;                                                   //base value: $ffpg-color-white; 
+//$ffpg-cards-width: ;                                                             //base value: 450px;
+//$ffpg-cards-border-radius: ;                                                     //base value: 5px; 
+//$ffpg-card-body-padding-inline: ;                                                //base value: $ffpg-card-padding-inline;
+
+//----------------------------------------------------> staars Rating <----------------------------------------------------//
+//$ffpg-stars-color: ;                                                             //base value: $ffpg-color-primary; 
+//$ffpg-stars-size: ;                                                              //base value: 3rem; 
+//$ffpg-stars-font-family: ;                                                       //base value: null;
+//$ffpg-stars-full-star: ;                                                         //base value: \2605; 
+//$ffpg-stars-empty-star: ;                                                        //base value: \2606;
+
+//----------------------------------------------------> news / email form <------------------------------------------------//
+//$ffpg-form-email-background-color: ;                                             //base value: $ffpg-color-primary-light ; 
+//$ffpg-form-focus-visible-border-color: ;                                         //base value: $ffpg-color-primary ; 
+//$ffpg-form-email-width: ;                                                        //base value: 33.3333% ; 
+//$ffpg-form-email-border-radius: ;                                                //base value: 2px ; 
+//$ffpg-form-email-submit-padding-inline: ;                                        //base value: $ffpg-font-size-base ; 
+//$ffpg-form-email-submit-padding-block: ;                                         //base value: calc($ffpg-font-size-base / 1.5); 
+//$ffpg-form-email-submit-color: ;                                                 //base value: $ffpg-color-white; 
+//$ffpg-form-email-submit-content: ;                                               //base value: '\2192'; 
+//$ffpg-form-email-input-color: ;                                                  //base value: $ffpg-color-primary-dark; 
+//$ffpg-form-email-input-caret-color: ;                                            //base value: $ffpg-color-primary; 
+
+//----------------------------------------------------> toggle switch <------------------------------------------------//
+//$ffpg-toggle-switch-inactive-background-color: ;                                 //base value: $ffpg-color-succses; 
+//$ffpg-toggle-switch-active-background-color: ;                                   //base value: $ffpg-color-danger; 
+//$ffpg-toggle-switch-toggler-color: ;                                             //base value: $ffpg-color-primary; 
+//$ffpg-toggle-switch-border-radius: ;                                             //base value: 20px; 
+//$ffpg-toggle-switch-width: ;                                                     //base value: 8rem; 
+//$ffpg-toggle-switch-height: ;                                                    //base value: 4rem;
+//$ffpg-toggle-switch-toggler-width: ;                                             //base value: $ffpg-toggle-switch-height - 1rem; 
+//$ffpg-toggle-switch-toggler-height: ;                                            //base value: $ffpg-toggle-switch-height - 1rem;
+//$ffpg-toggle-switch-inactive-text: ;                                             //base value: attr(data-inaktive-text); 
+//$ffpg-toggle-switch-active-text: ;                                               //base value: attr(data-aktive-text);

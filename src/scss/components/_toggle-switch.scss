@@ -1,0 +1,70 @@
+$ffpg-toggle-switch-inactive-background-color: $ffpg-color-succses !default; 
+$ffpg-toggle-switch-active-background-color: $ffpg-color-danger !default; 
+$ffpg-toggle-switch-toggler-color: $ffpg-color-primary !default; 
+$ffpg-toggle-switch-border-radius: 20px !default; 
+$ffpg-toggle-switch-width: 8rem !default; 
+$ffpg-toggle-switch-height: 4rem !default;
+$ffpg-toggle-switch-toggler-width: $ffpg-toggle-switch-height - 1rem !default; 
+$ffpg-toggle-switch-toggler-height: $ffpg-toggle-switch-height - 1rem !default;
+$ffpg-toggle-switch-inactive-text: attr(data-inaktive-text) !default; 
+$ffpg-toggle-switch-active-text: attr(data-aktive-text) !default;
+
+.#{$prefix}-toggle-switch{
+    appearance: none;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: $ffpg-toggle-switch-width;
+    height: $ffpg-toggle-switch-height;
+    margin-block: 0.6rem;
+    margin-inline: 0.8rem;
+    transform-origin: center;
+    &::before{
+        content: $ffpg-toggle-switch-inactive-text ;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: $ffpg-toggle-switch-width;
+        height: $ffpg-toggle-switch-height;
+        top: 0;
+        left: 0;
+        padding-inline: 1rem;
+        background-color: $ffpg-toggle-switch-inactive-background-color;
+        cursor: pointer;
+        grid-row: 1;
+        grid-row: 1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        height: $ffpg-toggle-switch-toggler-height;
+        width: $ffpg-toggle-switch-toggler-width; 
+        top: 0.5rem;
+        left: 0.5rem;
+        background-color: $ffpg-toggle-switch-toggler-color;
+        transform-origin: middle;
+        cursor: pointer;
+    }
+    &--round{
+        &::before{
+            border-radius: $ffpg-toggle-switch-border-radius;
+        }
+        &::after{
+            border-radius: 50%;
+        }        
+    }
+    &:checked{
+        &::before{
+            content: $ffpg-toggle-switch-active-text;
+            justify-content: flex-start;
+            background-color: $ffpg-toggle-switch-active-background-color;
+        }
+        &::after{
+            left: calc($ffpg-toggle-switch-width / 2);
+        }
+    }
+}
+

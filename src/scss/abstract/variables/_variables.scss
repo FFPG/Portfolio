@@ -1,0 +1,98 @@
+$prefix: 'ffpg' !default;
+
+//colors
+$ffpg-color-primary: #050202 !default; 
+$ffpg-color-secondary: #ffffff !default;
+$ffpg-color-accent: null !default; 
+$ffpg-color-black:  #080808 !default; 
+$ffpg-color-white: #f6efef !default; 
+$ffpg-color-grey: #4e4c4c !default; 
+$ffpg-color-primary-light: #f8f5f0 !default; 
+$ffpg-color-primary-dark: #000000 !default; 
+$ffpg-color-succses: #22bb33 !default; 
+$ffpg-color-info:  	#5bc0de !default; 
+$ffpg-color-warning: #f0ad4e !default; 
+$ffpg-color-danger: #bb2124 !default; 
+
+//body
+$ffpg-body-background: null !default; 
+$ffpg-body-color: $ffpg-color-black !default; 
+
+//headings
+$ffpg-h1-color: null !default; 
+$ffpg-h2-color: null !default; 
+$ffpg-h3-color: null !default; 
+$ffpg-h4-color: null !default; 
+$ffpg-h5-color: null !default; 
+$ffpg-h6-color: null !default; 
+
+//code
+$ffpg-code-color: $ffpg-color-black !default; 
+
+//links
+$ffpg-link-color: $ffpg-body-color !default; 
+$ffpg-link-hover-color:  $ffpg-color-primary  !default; 
+//selectet text 
+$ffpg-selection-color: $ffpg-color-white !default; 
+$ffpg-selection-background-color: $ffpg-color-primary !default; 
+
+//typo
+$ffpg-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !default; 
+$ffpg-font-family-accent: null !default; 
+$ffpg-font-family-code: Monospace  !default; 
+$ffpg-font-family-icons: null !default; 
+
+$ffpg-font-size-root: 62.5% !default; //62.5% von 16px = 10px 
+$ffpg-font-size-base: 1rem !default; 
+$ffpg-font-size-breakpoint-smallest: 300px !default; 
+$ffpg-font-size-breakpoint-highest: 2500px !default; 
+
+$ffpg-font-weight-light: 300 !default; 
+$ffpg-font-weight-normal: 400 !default; 
+$ffpg-font-weight-bold: 700 !default; 
+
+$ffpg-h1-font-size: $ffpg-font-size-base * 4.6 !default; 
+$ffpg-h2-font-size: $ffpg-font-size-base * 3.6 !default; 
+$ffpg-h3-font-size: $ffpg-font-size-base * 2.8 !default; 
+$ffpg-h4-font-size: $ffpg-font-size-base * 2.2 !default; 
+$ffpg-h5-font-size: $ffpg-font-size-base * 1.8 !default; 
+$ffpg-h6-font-size: $ffpg-font-size-base * 1.6 !default; 
+$ffpg-body-font-size: $ffpg-font-size-base * 1.8 !default; 
+
+$ffpg-font-size-small: 0.8rem !default; 
+$ffpg-font-size-extra-small: 0.4rem !default; 
+$ffpg-font-size-large: 6rem !default; 
+$ffpg-font-size-extra-large: 8rem !default; 
+
+//for clamp calculations
+//min
+$ffpg-h4-min-font-size: $ffpg-font-size-base !default;
+$ffpg-h3-min-font-size: $ffpg-h4-min-font-size + calc($ffpg-h4-min-font-size / 3) !default; 
+$ffpg-h2-min-font-size: $ffpg-h3-min-font-size + calc($ffpg-h3-min-font-size / 3) !default; 
+$ffpg-h1-min-font-size: $ffpg-h2-min-font-size + calc($ffpg-h2-min-font-size / 3) !default;  
+//max
+$ffpg-h4-max-font-size: calc($ffpg-font-size-base * 1.618) !default;
+$ffpg-h3-max-font-size: calc($ffpg-h4-max-font-size * 1.618) !default; 
+$ffpg-h2-max-font-size: calc($ffpg-h3-max-font-size * 1.618) !default; 
+$ffpg-h1-max-font-size: calc($ffpg-h2-max-font-size * 1.618) !default;
+
+$ffpg-h1-line-height: 1.2 !default; 
+$ffpg-h2-line-height: 1.25 !default; 
+$ffpg-h3-line-height: 1.3 !default; 
+$ffpg-h4-line-height: 1.35 !default; 
+$ffpg-h5-line-height: 1.5 !default; 
+$ffpg-h6-line-height: 1.4 !default; 
+$ffpg-body-line-height: 1.5 !default; 
+
+$ffpg-letter-spacing-small: -0.05em !default; 
+$ffpg-letter-spacing-large: 0.1 !default; 
+
+//transition
+$ffpg-transition-short: all 0.3s ease-in-out !default; 
+$ffpg-transition-medium: all 0.5s ease-in-out !default; 
+$ffpg-transition-long: all 1s ease-in-out !default; 
+
+
+
+
+

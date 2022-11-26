@@ -1,0 +1,86 @@
+$ffpg-card-padding-inline: $ffpg-font-size-base * 2 !default; 
+$ffpg-card-padding-block:  calc($ffpg-font-size-base / 2) !default;
+$ffpg-card-padding-bottom: $ffpg-font-size-base !default;
+$ffpg-card-padding-top: $ffpg-font-size-base * 2 !default;
+$ffpg-card-boder-color: $ffpg-color-white !default; 
+$ffpg-card-background-color: $ffpg-color-white !default; 
+$ffpg-cards-width: 450px !default;
+$ffpg-cards-border-radius: 5px !default; 
+$ffpg-card-body-padding-inline: $ffpg-card-padding-inline !default; 
+
+.#{$prefix}-card{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $ffpg-card-padding-block;
+    width: $ffpg-cards-width;
+    background-color: $ffpg-card-background-color;
+    border-radius: $ffpg-cards-border-radius;
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: $ffpg-card-padding-top;
+        margin-bottom: $ffpg-font-size-base ;
+        &> img, & > picture {
+            margin-bottom: $ffpg-font-size-base;
+        }
+    }    
+    &__body{
+        display: flex;
+        flex-grow: 1; 
+        flex-direction: column;
+        padding-inline: $ffpg-card-body-padding-inline;
+        margin-bottom: $ffpg-font-size-base * 1.5;
+
+    }
+    &__list{
+        margin-left:  $ffpg-font-size-base ;
+        list-style-type: none; 
+        & > li{
+            position: relative;
+        }
+         &> li::before{
+            content: '';
+            color: $ffpg-color-primary;
+            position: absolute;
+            top: 53%;
+            left: -15px;
+            width: 0.5em;
+            height: 2px;
+            background-color: $ffpg-color-primary;
+         }
+    }
+    &__footer{
+        padding-inline: $ffpg-card-padding-inline;
+        padding-bottom: $ffpg-card-padding-bottom;
+        &__flex-grid{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            &__col-1{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            &__col-2{
+                grid-column: 2;
+                grid-row: 1;
+            }
+            &__col-3{
+                grid-column: 3;
+                grid-row: 1;
+            }
+            &__col-1-3{
+                grid-column: 1 / span 3;
+                grid-row: 1;
+            }
+        }
+    }
+}

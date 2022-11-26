@@ -1,0 +1,51 @@
+$ffpg-stars-color: $ffpg-color-primary !default; 
+$ffpg-stars-size: 3rem !default; 
+$ffpg-stars-font-family: null !default;
+$ffpg-stars-full-star: \2605 !default; 
+$ffpg-stars-empty-star: \2606 !default; 
+
+.#{$prefix}-stars-rating{
+    width: auto;
+    font-size: $ffpg-stars-size;
+    &--clamp{
+        font-size:font-size-generate-clamp($ffpg-h4-min-font-size, $ffpg-h4-max-font-size);
+    }
+    display: inline-block;
+    &-5{
+        &::before{
+            content:'#{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-full-star} '; 
+            color: $ffpg-stars-color;
+        }
+    }
+    &-4{
+        &::before{
+            content: '#{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-empty-star}'; 
+            color: $ffpg-stars-color;
+        }
+    }
+    &-3{
+        &::before{
+            content:'#{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} '; 
+            color: $ffpg-stars-color;
+            
+        }
+    }
+    &-2{
+        &::before{
+            content:'#{$ffpg-stars-full-star} #{$ffpg-stars-full-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} '; 
+            color: $ffpg-stars-color;
+        }
+    }
+    &-1{
+        &::before{
+            content:'#{$ffpg-stars-full-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} '; 
+            color: $ffpg-stars-color;
+        }
+    }
+    &-0{
+        &::before{
+            content:'#{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} #{$ffpg-stars-empty-star} '; 
+            color: $ffpg-stars-color;
+        }
+    }
+}

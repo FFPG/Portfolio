@@ -1,0 +1,98 @@
+//$prefix: '';                                                                                  //base value:'ffpg'
+
+//colors
+//$ffpg-color-primary: ;                                                                         //base value: #000000
+//$ffpg-color-secondary: ;                                                                      //base value: #ffffff
+//$ffpg-color-accent: ;                                                                         //base value: null; 
+//$ffpg-color-black: ;                                                                          //base value: #080808
+//$ffpg-color-white: ;                                                                          //base value: #f6efef
+//$ffpg-color-grey: ;                                                                           //base value: #4e4c4c
+//$ffpg-color-primary-light: ;                                                                  //base value: #f8f5f0; 
+//$ffpg-color-primary-dark: ;                                                                   //base value: #000000;
+
+//$ffpg-color-succses:  ;                                                                       //base value: #22bb33
+//$ffpg-color-info:  	 ;                                                                      //base value: #5bc0de
+//$ffpg-color-warning:  ;                                                                       //base value: #f0ad4e
+//$ffpg-color-danger:  ;                                                                        //base value: #bb2124
+
+//body
+//$ffpg-body-background:  ;                                                                     //base value: null
+//$ffpg-body-color: ;                                                                           //base value: $ffpg-color-black
+
+//headings
+//$ffpg-h1-color: ;                                                                             //base value: null
+//$ffpg-h2-color: ;                                                                             //base value: null
+//$ffpg-h3-color: ;                                                                             //base value: null
+//$ffpg-h4-color: ;                                                                             //base value: null
+//$ffpg-h5-color: ;                                                                             //base value: null
+//$ffpg-h6-color: ;                                                                             //base value: null
+
+//code
+//$ffpg-code-color: ;                                                                           //base value: $ffpg-color-black
+
+//links
+//$ffpg-link-color: ;                                                                           //base value: $ffpg-body-color
+//$ffpg-link-hover-color:   ;                                                                   //base value: $ffpg-color-primary
+
+//selection
+//$ffpg-selection-color: ;                                                                      //base value: $ffpg-color-white; 
+//$ffpg-selection-background-color: ;                                                           //base value: $ffpg-color-primary; 
+
+//typo
+
+//$ffpg-font-family-base: ;                                                                     //base value: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+//$ffpg-font-family-accent: ;                                                                   //base value: null;
+//$ffpg-font-family-code: ;                                                                     //base value: Monospace
+//$ffpg-font-family-icons: ;                                                                    //base value: null; 
+
+//$ffpg-font-size-root: ;                                                                       //base value: 62.5%
+//$ffpg-font-size-base: ;                                                                       //base value: 1rem 
+
+//$ffpg-font-weight-light: ;                                                                    //basw value: 300
+//$ffpg-font-weight-normal: ;                                                                   //basw value: 400
+//$ffpg-font-weight-bold: ;                                                                     //basw value: 700
+
+//$ffpg-h1-font-size: ;                                                                         //base value: $ffpg-font-size-base * 4.6
+//$ffpg-h2-font-size: ;                                                                         //base value: $ffpg-font-size-base * 3.6
+//$ffpg-h3-font-size: ;                                                                         //base value: $ffpg-font-size-base * 2.8 
+//$ffpg-h4-font-size: ;                                                                         //base value: $ffpg-font-size-base * 2.2 
+//$ffpg-h5-font-size: ;                                                                         //base value: $ffpg-font-size-base * 1.8 
+//$ffpg-h6-font-size: ;                                                                         //base value: $ffpg-font-size-base * 1.6 
+//$ffpg-body-font-size: ;                                                                       //base value: $ffpg-font-size-base * 1.8   
+
+//$ffpg-font-size-small: ;                                                                      //base value: 0.8rem; 
+//$ffpg-font-size-extra-small: ;                                                                //base value: 0.4rem; 
+//$ffpg-font-size-large: ;                                                                      //base value: 6rem; 
+//$ffpg-font-size-extra-large: ;                                                                //base value: 8rem; 
+
+//for clamp calculations
+//$ffpg-font-size-breakpoint-smallest: ;                                                        //base value: 300px; 
+//$ffpg-font-size-breakpoint-highest: ;                                                         //base value: 2500px; 
+//min
+//$ffpg-h4-min-font-size: ;                                                                     //base value: $ffpg-font-size-base;
+//$ffpg-h3-min-font-size: ;                                                                     //base value: $ffpg-h4-min-font-size + calc($ffpg-h4-min-font-size / 3); 
+//$ffpg-h2-min-font-size: ;                                                                     //base value: $ffpg-h3-min-font-size + calc($ffpg-h3-min-font-size / 3); 
+//$ffpg-h1-min-font-size: ;                                                                     //base value: $ffpg-h2-min-font-size + calc($ffpg-h2-min-font-size / 3);  
+//max
+//$ffpg-h4-max-font-size: ;                                                                     //base value: calc($ffpg-font-size-base * 1.618);
+//$ffpg-h3-max-font-size: ;                                                                     //base value: calc($ffpg-h4-max-font-size * 1.618); 
+//$ffpg-h2-max-font-size: ;                                                                     //base value: calc($ffpg-h3-max-font-size * 1.618); 
+//$ffpg-h1-max-font-size: ;                                                                     //base value: calc($ffpg-h2-max-font-size * 1.618);
+
+//$ffpg-h1-line-height: ;                                                                       //base value: 1.2 
+//$ffpg-h2-line-height: ;                                                                       //base value: 1.25 
+//$ffpg-h3-line-height: ;                                                                       //base value: 1.3 
+//$ffpg-h4-line-height: ;                                                                       //base value: 1.35 
+//$ffpg-h5-line-height: ;                                                                       //base value: 1.5 
+//$ffpg-h6-line-height: ;                                                                       //base value: 1.4 
+//$ffpg-body-line-height: ;                                                                     //base value: 1.5
+
+//$ffpg-letter-spacing-small: ;                                                                 //base value: -0.05em
+//$ffpg-letter-spacing-large: ;                                                                 //base value: 0.1em
+
+//transition
+//$ffpg-transition-short: ;                                                                     //base value: all 0.2s ease-in-out
+//$ffpg-transition-medium: ;                                                                    //base value: all 0.5s ease-in-out
+//$ffpg-transition-long: ;                                                                      //base value: all 1s ease-in-out
+
+//-------------------------------------------> theme specific custom vars <-------------------------------------------//

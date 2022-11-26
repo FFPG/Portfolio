@@ -1,0 +1,102 @@
+html{
+    font-size: $ffpg-font-size-root;
+}
+
+%typo-body{
+    font-family: $ffpg-font-family-base;
+    font-size: $ffpg-body-font-size;
+    font-weight: $ffpg-font-weight-normal;
+}
+
+body{
+    @extend %typo-body;
+    color: $ffpg-body-color;
+    line-height: $ffpg-body-line-height;
+}
+
+
+
+%headline{
+    font-family: $ffpg-font-family-base;
+    font-weight: $ffpg-font-weight-bold;
+    letter-spacing: normal; 
+    margin-bottom: .7rem;
+}
+
+h1,
+.#{$prefix}-h1{
+    @extend %headline;
+    font-size: $ffpg-h1-font-size;
+    line-height: $ffpg-h1-line-height;
+    color: $ffpg-h1-color;
+}
+
+h2,
+.#{$prefix}-h2{
+    @extend %headline;
+    font-size: $ffpg-h2-font-size;
+    line-height: $ffpg-h2-line-height;
+    color: $ffpg-h2-color;
+}
+
+h3,
+.#{$prefix}-h3{
+    @extend %headline;
+    font-size: $ffpg-h3-font-size;
+    line-height: $ffpg-h3-line-height;
+    color: $ffpg-h3-color;
+}
+
+h4,
+.#{$prefix}-h4{
+    @extend %headline;
+    font-size: $ffpg-h4-font-size;
+    line-height: $ffpg-h4-line-height;
+    color: $ffpg-h4-color;
+}
+
+h5,
+.#{$prefix}-h5{
+    @extend %headline;
+    font-size: $ffpg-h5-font-size;
+    line-height: $ffpg-h5-line-height;
+    color: $ffpg-h5-color;
+}
+
+h6,
+.#{$prefix}-h6{
+    @extend %headline;
+    font-size: $ffpg-h6-font-size;
+    line-height: $ffpg-h6-line-height;
+    color: $ffpg-h6-color;
+}
+
+code{
+    @extend %typo-body;
+    font-family: $ffpg-font-family-code; 
+}
+
+a{
+    @extend %typo-body;
+}
+
+b,
+strong{
+    font-weight: $ffpg-font-weight-bold;
+}
+
+thead, th, td, tr{
+    text-align: left;
+}
+thead, th{
+    font-weight: normal;
+}
+
+small{
+    font-size: $ffpg-font-size-small;
+}
+
+::selection{
+    background-color: $ffpg-selection-background-color;
+    color: $ffpg-selection-color;
+}

@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+html,
+body{
+    height: 100%;
+}
+
+
+
+button,
+input,
+form,
+img {
+    outline: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+a{
+    color: $ffpg-link-color;
+    &:hover,
+    &:active,
+    &:focus{
+        color: $ffpg-link-hover-color;
+    }
+}
+
+
+
+ins{
+    background-color: $ffpg-color-succses;
+    color: $ffpg-color-black;
+}
+
+del{
+    background-color: $ffpg-color-danger;
+    color: $ffpg-color-black;
+}
+
+code{
+    color: $ffpg-code-color;
+}
+

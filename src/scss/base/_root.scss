@@ -1,0 +1,75 @@
+
+body{
+    background-color: $ffpg-body-background;
+    scroll-behavior: smooth;
+}
+
+.#{$prefix}-img--cover{
+    //width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.#{$prefix}-color-primary{
+    color: $ffpg-color-primary;
+}
+
+.#{$prefix}-background-color-primary{
+    background-color: $ffpg-color-primary;
+}
+.#{$prefix}-background-color-secondary{
+    background-color: $ffpg-color-secondary;
+}
+.#{$prefix}-background-color-accent{
+    background-color: $ffpg-color-accent;
+}
+.#{$prefix}-background-color-primary-light{
+    background-color: $ffpg-color-primary-light;
+}
+.#{$prefix}-background-color-primary-dark{
+    background-color: $ffpg-color-primary-dark;
+}
+.#{$prefix}-background-color-black{
+    background-color: $ffpg-color-black;
+}
+.#{$prefix}-background-color-white{
+    background-color: $ffpg-color-white;
+}
+.#{$prefix}-background-color-grey{
+    background-color: $ffpg-color-grey;
+}
+
+.#{$prefix}-background-color-succses{
+    background-color: $ffpg-color-succses;
+}
+.#{$prefix}-background-color-info{
+    background-color: $ffpg-color-info;
+}
+.#{$prefix}-background-color-warning{
+    background-color: $ffpg-color-warning;
+}
+.#{$prefix}-background-color-danger{
+    background-color: $ffpg-color-danger;
+}
+
+.#{$prefix}-color-primary-light{
+    color: $ffpg-color-primary-light;
+}
+
+.#{$prefix}-text-uppercase{
+    text-transform: uppercase;
+}
+
+
+
+#prefix-output{
+    position: relative;
+    
+    &::before{
+        content: '#{$prefix}';
+        width: 5rem;
+        top: -2.8rem;
+        right: -6rem;
+    }
+}
+

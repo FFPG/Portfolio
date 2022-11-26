@@ -1,0 +1,45 @@
+
+@function remouve-unit($value){
+    @return $value / ($value * 0 + 1); 
+}
+
+
+@function px-to-rem($px-value){
+    $rem-value: calc(remouve-unit($px-value) / 16); 
+    @return $rem-value; 
+}
+
+
+//clamp 
+
+@function font-size-generate-clamp($minfont, $maxfont){
+    $minWidth: px-to-rem($ffpg-font-size-breakpoint-smallest);
+    $maxWidth: px-to-rem($ffpg-font-size-breakpoint-highest); 
+    $minfont: remouve-unit($minfont); 
+    $maxfont: remouve-unit($maxfont); 
+    $minfont: px-to-rem($minfont);
+    $maxfont: px-to-rem($maxfont);
+    $slope: calc(($maxfont - $minfont) / ($maxWidth - $minWidth)); 
+    $yIntersection: ($minWidth * -1) * $slope + $minfont;
+    $slope:  $slope * 100; 
+    $output:clamp(#{$minfont}rem, #{$yIntersection}rem + #{$slope}vw, #{$maxfont}rem);
+    @return $output; 
+}
+
+
+@function generate-clamp($value, $addto, $unit){
+    $minWidth: px-to-rem($ffpg-font-size-breakpoint-smallest);
+    $maxWidth: px-to-rem($ffpg-font-size-breakpoint-highest); 
+    $addto: remouve-unit($addto);
+    $value: remouve-unit($value);
+    $minfont: $value; 
+    $maxfont: $value + $addto; 
+    $slope: calc(($maxfont - $minfont) / ($maxWidth - $minWidth)); 
+    $yIntersection: ($minWidth * -1) * $slope + $minfont;
+    $slope:  $slope * 100; 
+    $output:clamp(#{$minfont}#{$unit}, #{$yIntersection}#{$unit} + #{$slope}vw, #{$maxfont}#{$unit});
+    @return $output; 
+}
+
+//shadow
+
