@@ -1,0 +1,18 @@
+@mixin generate-col ($key: false){
+    @if $key {
+        @for $i from 1 through $ffpg-grid-steps {
+            .#{$prefix}-col-#{$key}-#{$i}{
+                flex: 0 0 auto;
+                width: #{calc($i / $ffpg-grid-steps * 100)}#{$ffpg-grid-unit};
+            }
+        }
+    } @else{
+        @for $i from 1 through $ffpg-grid-steps {
+            .#{$prefix}-col-#{$i}{
+                flex: 0 0 auto;
+                width: #{calc($i / $ffpg-grid-steps * 100)}#{$ffpg-grid-unit};
+            }
+        }
+    }
+    
+}

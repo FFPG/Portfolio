@@ -59,7 +59,9 @@ body{
 .#{$prefix}-text-uppercase{
     text-transform: uppercase;
 }
-
+.#{$prefix}-text-align-center{
+    text-align: center;
+}
 
 
 #prefix-output{

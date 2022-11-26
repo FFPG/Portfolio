@@ -2,6 +2,14 @@
 /* grid */
 .#{$prefix}-row{
     display: flex;
+    //flex: 0 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@include generate-col;
+.#{$prefix}-row{
+    display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin-block: $ffpg-font-size-base / 2; 
