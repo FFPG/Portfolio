@@ -1,18 +1,18 @@
 /* Modal box, informationen zu web projekten */
-
 $modal-background-color: $ffpg-color-primary-light; 
 $modal-min-height: 490px; 
-
-
 .#{$prefix}-modal{
-    position: relative;
-    min-height: $modal-min-height;
-    height: fit-content;
-    border: 3px solid $modal-background-color;
-    left: 38%;
-    top: 27%;
-    //padding: 20px;
-    box-shadow: 0 0 500px rgba(100,100,100,0.5);
-
-    
+    &:not([open]){
+        display: none;
+    }
+    &[open]{
+        display: block;
+        position: fixed;
+        min-height: $modal-min-height;
+        height: fit-content;
+        border: 3px solid $modal-background-color;
+        left: 38%;
+        top: 27%;
+        box-shadow: 0 0 500px rgba(100,100,100,0.5);
+    }
 }
