@@ -1,0 +1,53 @@
+
+.#{$prefix}-rotatingGallery{
+    margin-block: 150px;
+    display: inline-block;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: b3dimgshowrot 50s linear infinite;
+    transform-origin: center center;
+    width: 60%;
+    //min-width: 400px;
+    &__helper{
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        transform-style: preserve-3d;
+        //border: 1px solid #ff0000;
+        background-color: transparent;
+        display: flex;
+        
+        @for $i from 1 through 5 {
+            $r: calc(36 * $i); 
+            &:nth-child(#{$i}){
+                transform: rotateY(#{$r}deg);
+            }
+        }
+        
+    }
+    &__img{
+        transform-style: preserve-3d;
+        transform-origin: center;
+        transform: rotateY(90deg);
+        width: 40%;
+        max-width: 250px;
+        height: auto;
+        //border: 1px solid#ffff00;
+        position: absolute;
+        &--left{
+           left: -200px;
+        }
+        &--right{
+            right: -200px;
+        }
+    }
+}
+
+@keyframes b3dimgshowrot{
+    0%{
+        transform: rotate3d(0,0,0,360deg);
+    }
+    100%{
+        transform: rotate3d(8,360,-30,360deg);
+    }
+}
