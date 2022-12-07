@@ -1,0 +1,94 @@
+
+@import './custom-vars'; //customized theme variables
+@import './custom-components-vars'; 
+@import './../../framework-default.scss';
+
+@import './custom-root';
+@import './custom-typo';
+@import './custom-components';
+
+
+/* vars */
+    :root{
+        /* sections */
+        --imp-sec-margin: 7px;
+        /* h1 */
+        --imp-h1-color:rgba(240, 240, 255, 1);
+        --imp-h1-font-size: 27pt;
+        /* h2 */
+        --imp-h2-color:rgba(240, 240, 255, 1);
+        --imp-h2-font-size: 22pt;
+        --imp-h2-margin-bottom: 5px;
+        --imp-h2-margin-top: 2px;
+        /* text box */
+        --imp-text-box-margin-left: 5px; 
+        /* text */
+        --imp-text-color: rgb(157, 157, 157);
+        --imp-text-font-size: 14pt; 
+        --imp-text-linien-abstand: 1px; 
+            /* links */
+            --imp-link-color: rgb(255, 255, 255);
+            --imp-link-color-hv: rgb(160, 160, 160);  
+            --imp-link-color-visited: rgb(131, 131, 131);
+    }
+
+/* impressum content */
+    .content-impressum{
+        margin-top: 10%;
+        width: 60%;
+        height: fit-content;
+        background: rgba(194, 194, 197, 0.3);
+        box-shadow: inset 0 0 300px rgba(240, 240, 255, 0.063), 0 0 20px rgba(240, 240, 255, 0.35) ;
+        filter: brightness(150%);
+        padding: 50px;
+    }
+
+/* header */
+    header{    
+        margin-bottom: 20px;
+    }
+    h1{
+        color:var(--imp-h2-color);
+        font-size: var(--imp-h1-font-size);
+    }
+
+/* main und header */
+    header,main{
+        margin-left: 7%;
+    }
+
+/* main */
+    /* section */
+        .impressum-sec{
+            margin: var(--imp-sec-margin);
+        }
+    /* h2 */
+        .impressum-h2-sec{
+            font-size: var(--imp-h2-font-size);
+            color: var(--imp-h2-color);
+            margin-bottom: var(--imp-h2-margin-bottom);
+            margin-top: var(--imp-h2-margin-top);
+        }
+    /* text box */
+        .impressum-text{
+            margin-left: var(--imp-text-box-margin-left);
+        }
+    /* p */
+        .impressum-content{
+            color: var(--imp-text-color);
+            font-size: var(--imp-text-font-size);            
+        }
+        .imp-content-p{
+            margin-top: var(--imp-text-linien-abstand);
+            margin-bottom: var(--imp-text-linien-abstand);
+        }
+        /* links */
+        .imp-content-link{
+            color: var(--imp-link-color);
+        }
+        .imp-content-link:hover{
+            color: var(--imp-link-color-hv);
+        }
+        .imp-content-link:visited{
+            color: var(--imp-link-color-visited);
+        }
