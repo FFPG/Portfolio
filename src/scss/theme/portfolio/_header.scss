@@ -1,0 +1,107 @@
+.ffpg-header{
+    height: 100vh;
+    width: 100%;
+    color: rgba(244,244,244,0.8);
+    text-align: center;
+    text-align: left;
+    transform-style: preserve-3d;
+    margin-bottom: 100px;
+}
+
+
+/* old code */
+.header{
+    &-text-box{
+        position: absolute;
+        width: 70%;
+        height: 600px;
+        top: 160px;
+        left: 150px;
+        transform: translateZ(100px);
+    }
+    &-flyin-text-box{
+        text-align: left;
+        font-size: 60px;
+        width: fit-content;
+        height: fit-content;
+        padding: 20px;
+        margin-bottom: 64px;
+        margin-left: 0;
+        background: rgba(244, 244, 244, 0.09);
+        box-shadow: 0px 0px 30px rgba(206, 206, 206, 0.098), -10px 10px 30px rgba(138, 138, 138, 0.098), 10px -10px 30px rgba(138, 138, 138, 0.098);
+        position: absolute;
+    }
+    &-writing-av{
+        position: absolute;
+        top: 220px;
+        text-align: left;
+        width: 76%;
+        height: 140px;
+        padding: 30px;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 57px;
+        /* border-bottom: 5px solid rgba(244, 244, 244, 0.5); */
+        text-shadow: 20px 8px 6px rgba(244, 244, 244, 0.118);
+    }
+    &-opening-text{
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        padding: 20px;
+        bottom: 55px;        
+        margin-left: 37px;
+    }
+    &-img-box{
+        width: 1150px;
+        transition: transform 1s;
+        filter: brightness(90%);
+        position: relative;
+        transform: translateZ(29px) rotate3d(0,0,0,50deg);    
+    }
+    &-img{
+        position: absolute;
+        transform: translateZ(30px) rotate3d(0,0,0,50deg);    
+        right: 0px;
+        bottom: 75px;
+        width: 1150px;    
+        background: transparent;
+        height: fit-content;
+    }
+    &-img:hover &-img-box{
+        transform: rotate3d(3,8,0,20deg);
+    }
+}
+
+
+@media(max-width: 600px) {
+    .header-flyin-text-box-co{
+        font-size: 50px;
+    }
+    .header-text-box{
+        top: 160px;
+        left: 5%;
+    }
+
+    /* header-writing-av */
+        .header-writing-av{
+            margin-left: 10px; 
+        }
+    /* header-opening-text */
+        .header-opening-text{
+            margin-left: 10px;
+            padding: 0px;
+            bottom: 105px; 
+        }
+    /* img */
+        .header-img-box{
+            display: none;
+            width: 10px;
+        }
+        .header-img-box {
+            display: none;
+            width: 10px;
+        }
+}
