@@ -13,6 +13,9 @@ $modal-min-height: 490px;
         border: 3px solid $modal-background-color;
         left: 38%;
         top: 27%;
+        @media(max-width: 450px) {
+            left: 0px;
+        }
         box-shadow: 0 0 500px rgba(100,100,100,0.5);
     }
 }

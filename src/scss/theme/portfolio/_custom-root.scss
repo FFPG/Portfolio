@@ -1,0 +1,37 @@
+
+body{
+    scroll-behavior: smooth;
+    @media(max-width: 400px){
+        overflow-x: hidden;
+    }
+}
+
+section{
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-align: start;
+}
+
+.#{$prefix}-items-center{
+    display: flex;
+    justify-content: center;
+}
+
+.#{$prefix}-hover-effect{
+    cursor: pointer;
+    &:hover{
+        filter: drop-shadow(0 0 15px rgba(200,200,200,0.6)); 
+    }
+}
+
+.#{$prefix}-min-height-500{
+    min-height: 500px;
+}
+
+.#{$prefix}-height-100vh{
+    height: 100vh;
+}
+
+.#{$prefix}-margin-block-200{
+    margin-block: font-size-generate-clamp(100px, 200px);
+}
