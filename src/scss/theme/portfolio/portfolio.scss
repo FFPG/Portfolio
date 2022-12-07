@@ -7,10 +7,10 @@
 @import './custom-components';
 
 //theme specific components & layouts 
-@import './img-rotation';
+@import './header'; 
 @import './modal'; 
 @import './img3drotation-nav'; 
+@import './rotatingGallery'; 
 @import './visitencard' ; 
-@import './top-down';
 @import './projects';
-@import './contact-me';
+@import './footer';
