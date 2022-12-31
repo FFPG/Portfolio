@@ -12,9 +12,12 @@ $modal-min-height: 490px;
         height: fit-content;
         border: 3px solid $modal-background-color;
         left: 38%;
-        top: 27%;
-        @media(max-width: 450px) {
-            left: 0px;
+        top: 15%;
+        @media(max-width: 800px) {
+            left: 20%;
+        }
+        @media(max-width: 600px) {
+            left: 5%;
         }
         box-shadow: 0 0 500px rgba(100,100,100,0.5);
     }

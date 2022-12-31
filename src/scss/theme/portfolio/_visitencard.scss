@@ -27,6 +27,9 @@ $visitencaard-face-height: 345px;
         transition: transform 3s;
         transform-origin: center;
         width: 504px;
+        @media(max-width: 504px){
+            width: 99%;
+        }
     }
     &-faces{
         width: 500px;
@@ -34,11 +37,19 @@ $visitencaard-face-height: 345px;
         position: absolute;
         transform-style: preserve-3d;
         padding: 5px;
+        @media(max-width: 504px){
+            width: 99%;
+            height: 70%;
+        }
     }
     &_front{
         transform: translateZ(5px);
         background: $backgroundcard;
         transform-style: preserve-3d;
+        @media(max-width: 504px){
+            height: max-content;
+            
+        }
     }
     &-bild{
         width: 25%;
@@ -49,6 +60,10 @@ $visitencaard-face-height: 345px;
         transform: translateZ(6px);
         filter: drop-shadow(0 0 1rem rgba(114, 114, 114, 0.4));
         box-shadow: 0px 0px 7px rgba(201, 201, 201, 0.2);
+        @media(max-width: 504px){
+            display: none;
+            
+        }
     }
 
     &_back{
@@ -69,7 +84,7 @@ $visitencaard-face-height: 345px;
         &-txt-bx{
             position: absolute;
             width: 100%;
-            height: fit-content;
+            height: max-content;
             top: 45px;
         }
         &-content-p{
@@ -90,6 +105,7 @@ $visitencaard-face-height: 345px;
         height: 100%;
         backface-visibility: hidden;
         transform-style: preserve-3d;
+        visibility: visible;
     }
 }
 
@@ -98,7 +114,11 @@ $visitencaard-face-height: 345px;
     transform: rotate3d(0,19,1,180deg);
 }
 .openbackbox{        
-    transform: translate3d(0px,$visitencaard-face-height,0px) ;
+    transform: translate3d(0px,$visitencaard-face-height,0px);
     border-top: 1px solid rgba(108, 136, 135, 0.5);
     box-shadow: 0px -3px 5px rgba(81, 102, 102, 0.576);
+    visibility: visible;
+    @media(max-width: 504px){
+        transform: translate3d(0px, 65vh,0px);
+    }
 }

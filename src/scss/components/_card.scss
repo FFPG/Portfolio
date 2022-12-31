@@ -12,7 +12,7 @@ $ffpg-card-body-padding-inline: $ffpg-card-padding-inline !default;
     display: flex;
     flex-direction: column;
     padding-bottom: $ffpg-card-padding-block;
-    width: $ffpg-cards-width;
+    max-width: $ffpg-cards-width;
     background-color: $ffpg-card-background-color;
     border-radius: $ffpg-cards-border-radius;
     &__header{
