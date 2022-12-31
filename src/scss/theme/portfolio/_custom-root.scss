@@ -33,5 +33,8 @@ section{
 }
 
 .#{$prefix}-margin-block-200{
-    margin-block: font-size-generate-clamp(100px, 200px);
+    margin-block: font-size-generate-clamp(200px, 300px);
+}
+.#{$prefix}-text-align-center{
+    text-align: center;
 }
