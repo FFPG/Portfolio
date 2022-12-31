@@ -35,10 +35,19 @@
         //border: 1px solid#ffff00;
         position: absolute;
         &--left{
-           left: -200px;
+            left: -200px;
+            @media (max-width: 500px) {
+                transform: rotateZ(89deg) rotateX(89deg);
+            }
         }
         &--right{
             right: -200px;
+            @media (max-width: 500px) {
+                transform: rotateZ(89deg) rotateX(-89deg);
+            }
+        }
+        @media (max-width: 500px) {
+            width: 100%;
         }
     }
 }
@@ -49,5 +58,13 @@
     }
     100%{
         transform: rotate3d(8,360,-30,360deg);
+    }
+}
+
+.#{$prefix}-mobile-rotate{
+    @media (max-width: 500px) {
+        transform: rotateZ(89deg);
+        margin-top: 160px;
+        right: -20%;
     }
 }
