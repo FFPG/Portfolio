@@ -7,11 +7,12 @@
 
 .#{$prefix}-card{
     min-height: 456px;
+    max-width: 550px !important;
     &-min-height-490{
         height: 490px;
-        max-width: 450px !important;
     }
 }
+
 
 //------------------------------------------------> staars Rating <------------------------------------------------//
 
@@ -23,4 +24,4 @@
 
 //------------------------------------------------> toggle switch <------------------------------------------------//
 
-//.#{$prefix}-toggle-switch{}
+//.#{$prefix}-toggle-switch{} 
