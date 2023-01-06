@@ -406,3 +406,5 @@ function d3turinfomodalop()
             break; 
     }
 }
+
+console.clear(); 

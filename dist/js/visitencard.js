@@ -12,3 +12,4 @@ document.querySelector('#visitencardbtnback').addEventListener('click', ()=>{
     slideDown.classList.remove('openbackbox'); 
 })
 
+console.clear(); 

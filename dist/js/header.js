@@ -13,3 +13,5 @@ function write(){
         setTimeout(write, speed);
     }
 }
+
+console.clear(); 

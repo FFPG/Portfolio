@@ -7,3 +7,5 @@ document.querySelectorAll(".ffpg-js-project").forEach(project => {
         modal.close(); 
     });
 }); 
+
+console.clear(); 
