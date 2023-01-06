@@ -329,8 +329,8 @@ const dmodalimgopen = document.getElementById("d-modal-openimg");
 const dmodalclose = document.getElementById("d-modal-close"); 
 //photoshop content
 const dmodalph = [
-    {h2:"Baum unter Sternen", text:"Dieses kleine Projekt habe ich erstellt, um verschiedene Photoshop Filter auszuprobieren. <br> Das momentan angezeigte Bild, ist das Bild vor der Bearbeitung."},
-    {h2:"Baum unter Sternen", text:"Dieses kleine Projekt habe ich erstellt, um verschiedene Photoshop Filter auszuprobieren. <br> Das momentan angezeigte Bild, ist das Bild nach der Bearbeitung."},
+    {h2:"Baum unter Sternen", text:"Dieses kleine Projekt habe ich erstellt, um verschiedene Photoshop-Filter auszuprobieren. <br> Das momentan angezeigte Bild, ist das Bild vor der Bearbeitung."},
+    {h2:"Baum unter Sternen", text:"Dieses kleine Projekt habe ich erstellt, um verschiedene Photoshop-Filter auszuprobieren. <br> Das momentan angezeigte Bild, ist das Bild nach der Bearbeitung."},
     {h2:"Glaskugel", text:"Bei diesem Projekt habe ich versucht, ein Bild, das ich im Internet gesehen habe, nachzuahmen. <br> Das momentan angezeigte Bild, ist das Bild vor der Bearbeitung."},
     {h2:"Glaskugel", text:"Bei diesem Projekt habe ich versucht, ein Bild, das ich im Internet gesehen habe, nachzuahmen. <br> Das momentan angezeigte Bild, ist das Bild nach der Bearbeitung."},
     {h2:"Tiere im Wald", text:"Bei diesem Projekt war die Aufgabenstellung, verschiedene Tiere möglichst realistisch in den Wald einzufügen. <br> Das momentan angezeigte Bild, ist das Bild vor der Bearbeitung."},
@@ -342,7 +342,7 @@ const dmodalph = [
 ]; 
 // illustrator content
 const dmodalill = [
-    {h2:"Cola Dose", text:"Dieses Projekt  habe ich privat erstellt, um die Möglichkeiten und Funktionen von Illustrator kennen zu lernen. "},
+    {h2:"Cola-Dose", text:"Dieses Projekt habe ich privat erstellt, um die Möglichkeiten und Funktionen von Illustrator kennen zu lernen. "},
     {h2:"Ford Fiesta", text:"Dieses Projekt  habe ich privat erstellt, um die Möglichkeiten und Funktionen von Illustrator kennen zu lernen."},
     {h2:"Wüste", text:"Dieses Projekt war eine Übungsaufgabe [Schule], um Illustrator kennen zu lernen. Aufgabe war es, das vorgegebene Bild so gut wie möglich nachzuahmen."},
     {h2:"Icons", text:"Dieses Projekt war eine Übungsaufgabe [Schule], um meine Fähigkeiten in Illustrator zu verbessern. Das Ziel war es die Vorlage so detailgetreu wie möglich nachzubauen."},
