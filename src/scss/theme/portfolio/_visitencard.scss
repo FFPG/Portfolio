@@ -13,7 +13,7 @@ $visitencard-back-text-bx-background: rgba(223, 219, 219, 0.12);
 $visitencaard-face-height: 345px; 
 
 .visitencard{
-    height: calc($visitencaard-face-height * 2);
+    height: 750px;
     position: relative;
     &-btn{
         position: absolute;

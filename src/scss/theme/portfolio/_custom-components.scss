@@ -11,8 +11,13 @@
     &-min-height-490{
         height: 490px;
     }
+    &__header.#{$prefix}-visitencard{
+        display: inline-block;
+        justify-content: inherit;
+        margin-left: 2rem;
+        text-align: left !important;
+    }
 }
-
 
 //------------------------------------------------> staars Rating <------------------------------------------------//
 
