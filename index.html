@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fabian Grießbachs Persönliches Prortfolio, Erstellt mit Eigenem HTML und SASS Framwork">
     <title>Framework basic</title>
     <link rel="stylesheet" href="./dist/css/portfolio.css">
     <link rel="icon" type="image/x-icon" href="./dist/images/favicon/ffpgsfavicon.PNG">
@@ -24,14 +25,14 @@
             </div>   
         </div>
         <div class="header-img">
-            <img class="header-content header-img-box" src="./dist/images/portrai/portraittransparenz2-min.webp" alt="">    
+            <img class="header-content header-img-box" src="./dist/images/portrai/portraittransparenz2-min.webp" alt="Prortrai Bild" loading="lazy">    
         </div>        
     </header>
     <main>
         <section class="visitencard ffpg-items-center">
             <article class="visitencard-content" id="visitencarte-content">
                 <section class="visitencard-faces visitencard_front ffpg-card">
-                    <header class="ffpg-card__header">
+                    <header class="ffpg-card__header ffpg-visitencard">
                         <h2 class="visitencard-front-content visitencard-title ffpg-h3">Fabian Grießbach</h2>
                     </header>
                     <section class="ffpg-card__body ">
@@ -56,11 +57,11 @@
                                 </p> 
                             </div>
                     </section>
-                        <img src="./dist/images/portrai/portraitransparenz.webp" alt="Portai" class="visitencard-front-content visitencard-bild">
+                        <img src="./dist/images/portrai/portraitransparenz.webp" alt="Portai" class="visitencard-front-content visitencard-bild" loading="lazy">
                     <div class="ffpg-card__footer">
-                        <div class="visitencard-front-content visitencard-btn ffpg-button ffpg-button--primary" id="visitencardbtnfront">
+                        <button class="visitencard-front-content visitencard-btn ffpg-button ffpg-button--primary" id="visitencardbtnfront">
                             Turn
-                        </div>
+                        </button>
                     </div>
                 </section>
                 <section class="visitencard-faces visitencard_back ffpg-card" id="js-faces-hight">
@@ -86,9 +87,9 @@
                                 zum Mediendesigner mit Schwerpunkt Animation und Visualisierung zu beginnen. In meinem Praktikum bei der "MedienFabrik" habe ich bereits tiefergehende Erfahrungen im Webdevelopment sammeln können. Mit der Ausbildung zum Mediendesigner möchte ich meinem Wunsch, mein Hobby zum Beruf zu machen, ein Stück näher kommen.
                             </p>              
                         </div>
-                        <a class="visitencard-back-open-content visitencard-btn ffpg-button ffpg-button--primary" id="visitencardbtnback">
+                        <button class="visitencard-back-open-content visitencard-btn ffpg-button ffpg-button--primary" id="visitencardbtnback">
                             Turn
-                        </a>
+                        </button>
                     </div>                        
                 </section>
             </article>                
@@ -97,16 +98,16 @@
             <h2 class="ffpg-h2 ffpg-text-align-center">Medien Design Projekte</h2>
             <div class="ffpg-img3drotation-nav">
                 <div class=" ffpg-col-2 ffpg-img3drotation-nav__item sec-co-nav-btn photoshop " id="sec2navbtn1">
-                    <img class="ffpg-col-6  sec-co-nav-btn-img photoshop-img sec-co-nav-btn-img-active-th ffpg-hover-effect" src="./dist/images/logos/Adobe-Photoshop-Logo.webp" alt="photoshop-logo" id="photoshop-img">
+                    <img class="ffpg-col-6  sec-co-nav-btn-img photoshop-img sec-co-nav-btn-img-active-th ffpg-hover-effect" src="./dist/images/logos/Adobe-Photoshop-Logo.webp" alt="photoshop-logo" id="photoshop-img" loading="lazy">
                 </div>
                 <div class="ffpg-img3drotation-nav__item ffpg-col-2 sec-co-nav-btn illustrator" id="sec2navbtn2">
-                    <img class="ffpg-col-6  sec-co-nav-btn-img illustrator-img ffpg-hover-effect" src="./dist/images/logos/adobe-Illustrator-logo-1-1.webp" alt="illustrator-logo" id="illustrator-img">
+                    <img class="ffpg-col-6  sec-co-nav-btn-img illustrator-img ffpg-hover-effect" src="./dist/images/logos/adobe-Illustrator-logo-1-1.webp" alt="illustrator-logo" id="illustrator-img" loading="lazy">
                 </div>
                 <div class="ffpg-img3drotation-nav__item ffpg-col-2 sec-co-nav-btn indesign" id="sec2navbtn3">
-                    <img class="ffpg-col-6  sec-co-nav-btn-img indesign-img ffpg-hover-effect" src="./dist/images/logos/Adobe_InDesign.webp" alt="indesig-logo" id="indesign-img">
+                    <img class="ffpg-col-6  sec-co-nav-btn-img indesign-img ffpg-hover-effect" src="./dist/images/logos/Adobe_InDesign.webp" alt="indesig-logo" id="indesign-img" loading="lazy">
                 </div>
                 <div class="ffpg-img3drotation-nav__item ffpg-col-2 sec-co-nav-btn blender" id="sec2navbtn4">
-                    <img class="ffpg-col-6  sec-co-nav-btn-img blender-img ffpg-hover-effect" src="./dist/images/logos/Blender_logo_no_text.webp" alt="blender-logo" id="blender-img">
+                    <img class="ffpg-col-6  sec-co-nav-btn-img blender-img ffpg-hover-effect" src="./dist/images/logos/Blender_logo_no_text.webp" alt="blender-logo" id="blender-img" loading="lazy">
                 </div>
             </div>
             <dialog class="ffpg-modal" id="d-modal">
@@ -118,8 +119,8 @@
                         <p id="d-modal-text"></p>   
                     </section>
                     <footer class="ffpg-card__footer ffpg-card__footer-grid">
-                        <a class="ffpg-button ffpg-button--primary ffpg-card__footer-grid__col-1" id="d-modal-openimg">Bild öffnen</a>                
-                        <a class="ffpg-button ffpg-button--secondary ffpg-card__footer-grid__col-3" id="d-modal-close">Close</a>
+                        <button class="ffpg-button ffpg-button--primary ffpg-card__footer-grid__col-1" id="d-modal-openimg">Bild öffnen</button>                
+                        <button class="ffpg-button ffpg-button--secondary ffpg-card__footer-grid__col-3" id="d-modal-close">Close</button>
                     </footer>
                 </div>
             </dialog>
@@ -153,7 +154,7 @@
                 <header class="ffpg-items-center">
                     <h3 class="ffpg-text-align-center">Virtual Keyboard</h3>
                     <div class="projekt-skills-bx">
-                        <p class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-1">i</p>
+                        <button class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-1">i</button>
                     </div>
                 </header>                    
                 <section class="ffpg-items-center">
@@ -176,7 +177,7 @@
                             <p class="modal-text">Die Tastatur wiederholt die Eingabe in das Eingabefeld des Users, nachdem dieser die "Enter" Taste auf seiner Tastatur gedrückt hat.</p>
                         </section>
                         <footer class="ffpg-card__footer">
-                            <a class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</a>
+                            <button class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</button>
                         </footer>
                     </div>
                 </dialog>
@@ -185,7 +186,7 @@
                 <header class="ffpg-items-center">
                     <h3 class="ffpg-text-align-center"> 3D Clock </h3>
                     <div class="projekt-skills-bx">
-                        <p class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-1">i</p>
+                        <button class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-2">i</button>
                     </div>
                 </header>   
                 <section class="ffpg-items-center">
@@ -208,7 +209,7 @@
                             <p class="modal-text"></p>
                         </section>
                         <footer class="ffpg-card__footer">
-                            <a class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</a>
+                            <button class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</button>
                         </footer>
                     </div>
                 </dialog>
@@ -217,7 +218,7 @@
                 <header class="ffpg-items-center">
                     <h3 class="ffpg-text-align-center"> Sanduhr </h3>
                     <div class="projekt-skills-bx">
-                        <a class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-1">i</a>
+                        <button class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-3">i</button>
                     </div>
                 </header>     
                 <section class="ffpg-items-center">
@@ -240,7 +241,7 @@
                             <p class="modal-text"></p>
                         </section>
                         <footer class="ffpg-card__footer">
-                            <a class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</a>
+                            <button class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</button>
                         </footer>
                     </div>
                 </dialog>
@@ -249,7 +250,7 @@
                 <header class="ffpg-items-center">
                     <h3 class="ffpg-text-align-center">Abfrage Algorithmus</h3>
                     <div class="projekt-skills-bx">
-                        <a class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-1">i</a>
+                        <button class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-4">i</button>
                     </div>
                 </header>    
                 <section class="ffpg-items-center">
@@ -276,7 +277,7 @@
                             <p class="modal-text"></p>
                         </section>
                         <footer class="ffpg-card__footer">
-                            <a class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</a>
+                            <button class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</button>
                         </footer>
                     </div>
                 </dialog>
@@ -285,7 +286,7 @@
                 <header class="ffpg-items-center">
                     <h3 class="ffpg-text-align-center">Syntaxhighlighter</h3>
                     <div class="projekt-skills-bx">
-                        <a class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-1">i</a>
+                        <button class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-5">i</button>
                     </div>
                 </header>    
                 <section class="ffpg-items-center">
@@ -308,17 +309,17 @@
                             <p class="modal-text"></p>
                         </section>
                         <footer class="ffpg-card__footer">
-                            <a class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</a>
+                            <button class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</button>
                         </footer>
                     </div>
                 </dialog>
             </article>
-            
+
             <article class="project ffpg-js-project" id="a-projekt1">
                 <header class="ffpg-items-center">
                     <h3 class="ffpg-text-align-center">Cube 3D</h3>
                     <div class="projekt-skills-bx">
-                        <a class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-1">i</a>
+                        <button class="projekt-skills-bx-info pro-skil ffpg-button ffpg-button--info ffpg-js-modal__open" id="psbx-info-6">i</button>
                     </div>
                 </header>      
                 <section class="ffpg-items-center">
@@ -342,7 +343,7 @@
                             <p class="modal-text"></p>
                         </section>
                         <footer class="ffpg-card__footer">
-                            <a class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</a>
+                            <button class="modal-close-btn ffpg-button ffpg-button--primary" id="modalclosebtn1">Close</button>
                         </footer>
                     </div>
                 </dialog>
@@ -353,7 +354,7 @@
     <footer id="footer" class="ffpg-footer ffpg-js-project">
         <div class="ffpg-footer__grid">
             <a href="./subpages/impressum/impressum.html" target="_blank" class="ffpg-footer__impressum ffpg-footer__grid__item">Impressum</a>
-            <a class=" ffpg-button ffpg-button--info ffpg-js-modal__open ffpg-footer__weiterInfos ffpg-footer__grid__item" id="seiteninformationen">Webseite Infos</a>  
+            <button class=" ffpg-button ffpg-button--info ffpg-js-modal__open ffpg-footer__weiterInfos ffpg-footer__grid__item" id="seiteninformationen">Webseite Infos</button>  
             <p class="ffpg-footer__copyright ffpg-footer__grid__item">Fabian Grießbach</p> 
         </div>  
         <dialog class="ffpg-modal" id="modal-4">
@@ -369,7 +370,7 @@
                     <p class="modal-text"></p>
                 </section>
                 <footer class="ffpg-card__footer ffpg-card__footer-grid">
-                    <a class="ffpg-button ffpg-button--secondary ffpg-card__footer-grid__col-2 modal-close-btn" id="modalclosebtn4">Close</a>
+                    <button class="ffpg-button ffpg-button--secondary ffpg-card__footer-grid__col-2 modal-close-btn" id="modalclosebtn4">Close</button>
                 </footer>
             </div>
         </dialog>        
@@ -378,5 +379,6 @@
     <script src="./dist/js/visitencard.js" defer></script>
     <script src="./dist/js/img3drs.js" defer></script>
     <script src="./dist/js/projrcts-modals.js" defer></script>
+    
 </body>
 </html>
